@@ -30,8 +30,12 @@ void multiplication(num1,[num2]){
   print("multi is $multi");
 }
 void division(num1,[num2]){
-  num divide=num1/num2;
-  print("divide is $divide");
+  if(num2!=0){
+    num divide=num1/num2;
+    print("divide is $divide");
+  }else{
+    print("Zero can't be divide");
+  }
 }
 
 
