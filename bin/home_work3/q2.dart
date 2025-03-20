@@ -4,23 +4,19 @@
 
 void main(){
   List<String>grocery=[];
-  grocery.add(addItem("banana"));
-  grocery.add(addItem("watermelon"));
-  grocery.add(addItem("apple"));
+  addItem("bananna", grocery);
   displayGrocery(grocery);
-  if(grocery.isEmpty){
-    print("the grocery is empty");
-  }
-  grocery.remove(removeItem("apple"));
-displayGrocery(grocery);
+
 }
 
-String addItem(String item){
-return item;
+void addItem(String item,List<String>list){
+  list.add(item);
 }
-String removeItem(String item){
-  return item;
+void removeItem(String item,List<String>list){
+list.remove(item);
 }
-void displayGrocery(List<String>grocery){
-  print(grocery);
+void displayGrocery(List<String>list){
+for(String item in list){
+  print(item);
+}
 }
