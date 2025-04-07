@@ -11,8 +11,8 @@ void main(){
 
 double calculateBonus(int salary, int yearsWorked){
   if(yearsWorked>=5){
-    return 0.10;
+    return salary/10;
   }else{
-    return 0.05;
+    return salary/ 5;
   }
 }

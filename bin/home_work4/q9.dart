@@ -22,7 +22,6 @@ class Rectangle {
   set width(double width) {
     this.width = width;
   }
-
   set height(double height) {
     this.height = height;
   }
